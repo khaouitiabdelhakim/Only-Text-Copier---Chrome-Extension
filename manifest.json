@@ -1,0 +1,19 @@
+{
+    "manifest_version": 3,
+    "name": "Only Text Copier",
+    "version": "1.0",
+    "description": "An extension that copies only the plain text from any webpage, removing all formatting and styles.",
+    "permissions": ["clipboardWrite"],
+    "icons": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    },
+    "content_scripts": [
+      {
+        "matches": ["http://*/*", "https://*/*", "file://*/*"],
+        "js": ["app.js"]
+      }
+    ]
+  }
+  
